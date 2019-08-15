@@ -1,1 +1,1 @@
-# awesome-language-Fizzbuzz
+# Awesome-Language-Fizzbuzz
