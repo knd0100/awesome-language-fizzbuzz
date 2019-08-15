@@ -1,1 +1,1 @@
-# Awesome-Language-Fizzbuzz
+色んな言語でFizzbuzz問題を解いた解答集です。
