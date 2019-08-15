@@ -8,16 +8,14 @@ func main() {
 	for i < 101 {
 		switch {
 		case i%15 == 0:
-			fmt.Print("FIZZ BUZZ!")
+			fmt.Println("FIZZ BUZZ!")
 		case i%3 == 0:
-			fmt.Print("FIZZ!")
+			fmt.Println("FIZZ!")
 		case i%5 == 0:
-			fmt.Print("BUZZ!")
+			fmt.Println("BUZZ!")
 		default:
-			fmt.Print(i)
+			fmt.Println(i)
 		}
-
 		i++
 	}
-
 }
