@@ -7,6 +7,7 @@ void Main(){
 }
 
 int main(){
+  ios_base::sync_with_stdio(false);
   rep(i,100){
       if (i % 15 == 0 ) {
         cout << "Fizz,Buzz" << endl;
