@@ -12,5 +12,5 @@ $count = 1;
            echo $count;
        }
        ++$count;
-       echo '<br>';
+       echo PHP_EOL;
    }
