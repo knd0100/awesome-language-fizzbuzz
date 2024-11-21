@@ -1,6 +1,5 @@
 "use strict";
 
-// fizzbuzz関数を追加
 function fizzbuzz(i) {
   if (i % 15 === 0) {
     return "FizzBuzz";
@@ -14,6 +13,5 @@ function fizzbuzz(i) {
 }
 
 for (let i = 1; i <= 100; i++) {
-  // 既存の条件文を削除し、以下を追加
   console.log(fizzbuzz(i));
 }
