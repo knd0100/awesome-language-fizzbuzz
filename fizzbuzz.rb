@@ -1,11 +1,17 @@
-for i in 1..100
+# fizzbuzzメソッドを追加
+def fizzbuzz(i)
     if i % 15 == 0
-        puts "FizzBuzz!"
+        "FizzBuzz!"
     elsif i % 3 == 0
-        puts "Fizz!"
+        "Fizz!"
     elsif i % 5 == 0 
-        puts "Buzz!"
+        "Buzz!"
     else
-        puts i
+        i.to_s
     end
+end
+
+for i in 1..100
+    # 既存の条件文を削除し、以下を追加
+    puts fizzbuzz(i)
 end

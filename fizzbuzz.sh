@@ -1,13 +1,19 @@
 #!/bin/bash
 
-for i in {1..100}; do
-    if ((i % 15 == 0)); then
+# fizzbuzz関数を追加
+fizzbuzz() {
+    if (( $1 % 15 == 0 )); then
         echo fizzbuzz
-    elif ((i % 3 == 0)); then
+    elif (( $1 % 3 == 0 )); then
         echo fizz
-    elif ((i % 5 == 0)); then
+    elif (( $1 % 5 == 0 )); then
         echo buzz
     else
-        echo "$i"
+        echo "$1"
     fi
+}
+
+for i in {1..100}; do
+    # 既存の条件文を削除し、以下を追加
+    fizzbuzz $i
 done
