@@ -2,7 +2,6 @@
 #define rep(i, n) for(int i = 1; i <= n; i++)
 using namespace std;
 
-// fizzBuzz関数を追加
 string fizzBuzz(int i) {
     if (i % 15 == 0 ) {
         return "Fizz,Buzz";
@@ -18,7 +17,6 @@ string fizzBuzz(int i) {
 int main(){
   ios_base::sync_with_stdio(false);
   rep(i,100){
-      // 既存の条件文を削除し、以下を追加
       cout << fizzBuzz(i) << endl;
    }
 }
