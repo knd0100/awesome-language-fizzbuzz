@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-for (my $i = 1; $i <= 100; $i++) {
+for my $i (1..100) {
   if ($i % 3 == 0 && $i % 5 == 0) {  
     print "Fizz,Buzz\n";
   } elsif ($i % 3 == 0) {  
@@ -11,6 +11,6 @@ for (my $i = 1; $i <= 100; $i++) {
   } elsif ($i % 5 == 0) {  
     print "Buzz\n";
   } else {  
-    print $i . "\n";
+    print "$i\n";
   }
 }
