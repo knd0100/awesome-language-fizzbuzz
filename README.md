@@ -1,3 +1,3 @@
 #Awesome language Fizzbuzz
 
-Answer：Go,Lua,Python,PHP,Java,C,C++,JavaScript,CoffeeScript,Perl,Ruby,bash
+Answer：JavaScript,Go,Lua,Python,PHP,Java,C++,CoffeeScript,Perl,Ruby,bash
