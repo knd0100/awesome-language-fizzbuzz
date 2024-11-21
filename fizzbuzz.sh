@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# fizzbuzz関数を追加
 fizzbuzz() {
     if (( $1 % 15 == 0 )); then
         echo fizzbuzz
@@ -14,6 +13,5 @@ fizzbuzz() {
 }
 
 for i in {1..100}; do
-    # 既存の条件文を削除し、以下を追加
     fizzbuzz $i
 done
