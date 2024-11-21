@@ -1,4 +1,3 @@
-# fizzbuzzメソッドを追加
 def fizzbuzz(i)
     if i % 15 == 0
         "FizzBuzz!"
@@ -12,6 +11,5 @@ def fizzbuzz(i)
 end
 
 for i in 1..100
-    # 既存の条件文を削除し、以下を追加
     puts fizzbuzz(i)
 end
