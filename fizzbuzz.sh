@@ -1,15 +1,10 @@
 #!/bin/bash
 
 fizzbuzz() {
-    if (( $1 % 15 == 0 )); then
-        echo fizzbuzz
-    elif (( $1 % 3 == 0 )); then
-        echo fizz
-    elif (( $1 % 5 == 0 )); then
-        echo buzz
-    else
-        echo "$1"
-    fi
+    (( $1 % 15 == 0 )) && echo fizzbuzz && return
+    (( $1 % 3 == 0 )) && echo fizz && return
+    (( $1 % 5 == 0 )) && echo buzz && return
+    echo "$1"
 }
 
 for i in {1..100}; do

@@ -1,20 +1,18 @@
 <?php
 
 function fizzbuzz($count) {
-    if (($count % 3 == 0) and ($count % 5 == 0)) {
+    if ($count % 15 == 0) {
         return 'FizzBuzz';
-    } elseif ($count % 3 == 0) {
-        return 'Fizz';
-    } elseif ($count % 5 == 0) {
-        return 'Buzz';
-    } else {
-        return $count;
     }
+    if ($count % 3 == 0) {
+        return 'Fizz';
+    }
+    if ($count % 5 == 0) {
+        return 'Buzz';
+    }
+    return $count;
 }
 
-$count = 1;
-while ($count <= 100) {
-    echo fizzbuzz($count);
-    ++$count;
-    echo PHP_EOL;
+for ($count = 1; $count <= 100; ++$count) {
+    echo fizzbuzz($count) . PHP_EOL;
 }

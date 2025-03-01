@@ -5,17 +5,10 @@ use warnings;
 
 sub fizzbuzz {
     my ($i) = @_;
-    if ($i % 15 == 0) {
-        return "Fizz,Buzz";
-    } elsif ($i % 3 == 0) {
-        return "Fizz";
-    } elsif ($i % 5 == 0) {
-        return "Buzz";
-    } else {
-        return $i;
-    }
+    return "Fizz,Buzz" if $i % 15 == 0;
+    return "Fizz" if $i % 3 == 0;
+    return "Buzz" if $i % 5 == 0;
+    return $i;
 }
 
-for my $i (1..100) {
-    print fizzbuzz($i) . "\n";
-}
+print fizzbuzz($_) . "\n" for 1..100;
