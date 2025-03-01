@@ -3,15 +3,11 @@
 using namespace std;
 
 string fizzBuzz(int i) {
-    if (i % 15 == 0 ) {
-        return "Fizz,Buzz";
-    } else if ( i % 3 == 0 ) {
-        return "Fizz";
-    } else if ( i % 5 == 0 ) {
-        return "Buzz";
-    } else {
-        return to_string(i) + ",";
-    }
+    string result;
+    result.reserve(8);  // 予めメモリ確保
+    if (i % 3 == 0) result += "Fizz";
+    if (i % 5 == 0) result += "Buzz";
+    return result.empty() ? to_string(i) : result;
 }
 
 int main(){

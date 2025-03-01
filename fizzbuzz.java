@@ -6,14 +6,9 @@ public class Main {
   }
 
   public static String fizzBuzz(int i) {
-    if (i % 15 == 0) {
-      return "FizzBuzz";
-    } else if (i % 5 == 0) {
-      return "Buzz";
-    } else if (i % 3 == 0) {
-      return "Fizz";
-    } else {
-      return Integer.toString(i);
-    }
+    StringBuilder result = new StringBuilder();
+    if (i % 3 == 0) result.append("Fizz");
+    if (i % 5 == 0) result.append("Buzz");
+    return result.length() > 0 ? result.toString() : String.valueOf(i);
   }
 }
