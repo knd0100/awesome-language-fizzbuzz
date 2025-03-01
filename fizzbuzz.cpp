@@ -4,7 +4,7 @@ using namespace std;
 
 string fizzBuzz(int i) {
     string result;
-    result.reserve(8);  // 予めメモリ確保
+    result.reserve(8); 
     if (i % 3 == 0) result += "Fizz";
     if (i % 5 == 0) result += "Buzz";
     return result.empty() ? to_string(i) : result;
